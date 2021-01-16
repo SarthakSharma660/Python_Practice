@@ -41,10 +41,10 @@ def winner(Input):
         return score
 a_dic=randomvalue()
 while game_over:
-    print(f"Compare A:{a_dic['name']},{a_dic['description']},from {a_dic['country']}.To tese the code followers{a_dic['follower_count']}")
+    print(f"Compare A:{a_dic['name']},{a_dic['description']},from {a_dic['country']}.")
     print(vs)
     b_dic=randomvalue()
-    print(f"Compare B:{b_dic['name']},{b_dic['description']},from {b_dic['country']}.To tese the code followers{b_dic['follower_count']}")
+    print(f"Compare B:{b_dic['name']},{b_dic['description']},from {b_dic['country']}.")
     user_input=input("Who has more followers? Type 'A' or 'B': ").lower()
     score=winner(user_input)
     if score==0:
